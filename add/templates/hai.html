@@ -1,0 +1,23 @@
+
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>addition</title>
+    <link rel="stylesheet"  type="text/css" href="{% static 'styless/sty.css' %}"/>
+</head>
+<body>
+    <h2>Adding of Two Numbers</h2>
+    <form action="add" method="post">
+        {% csrf_token %}
+       Enter first no: <input type="text" name='num1'><br><br>
+       Enter second no: <input type="text" name='num2'><br>
+
+
+
+        <input type="submit">
+
+    </form>
+</body>
+</html>
